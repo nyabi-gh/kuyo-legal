@@ -1,6 +1,6 @@
 # Kuyo Privacy Policy
 
-Effective: September 30, 2026
+Effective: October 1, 2026
 
 Kuyo is a Discord bot that reads selected text messages aloud and provides optional social-link previews, enabled by default per server. It also contains an optional character-reply feature for explicit mentions, which the service operator may enable or disable, and mini-games any member can open with the `/game` command. This policy explains what information Kuyo uses and how it is handled.
 

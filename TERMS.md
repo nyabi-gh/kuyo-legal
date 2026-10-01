@@ -1,6 +1,6 @@
 # Kuyo Terms of Service
 
-Effective: September 30, 2026
+Effective: October 1, 2026
 
 By adding or using Kuyo, you agree to these terms.
 
