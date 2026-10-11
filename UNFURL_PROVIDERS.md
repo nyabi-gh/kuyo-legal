@@ -29,7 +29,8 @@ When link previews are enabled, Kuyo rewrites a supported public-post URL so tha
 | Kick Clips | clkick.com |
 | AliExpress | ali.tdy.app |
 | BOOTH | No rewriting; extra product photos are linked from booth.pximg.net |
+| Steam Workshop | No rewriting; Kuyo draws a card from Steam's public data and images.steamusercontent.com, or leaves the link to Steam's own preview |
 
-To choose the address, Kuyo itself makes one lookup per post for some sites, sending only the post identifier: api.fxtwitter.com for X, pixiv.net and www.phixiv.net for Pixiv, and booth.pm for BOOTH. It does not download media for any site except e621. Adult e621 media, adult BOOTH product photos, and age-restricted pixiv works are previewed only in channels marked age-restricted, unless the operator has configured an installation whose servers are all for adults.
+To choose the address, Kuyo itself makes one lookup per post for some sites, sending only the post identifier: api.fxtwitter.com for X, pixiv.net and www.phixiv.net for Pixiv, booth.pm for BOOTH, and api.steampowered.com and store.steampowered.com for Steam Workshop. It does not download media for any site except e621. Adult e621 media, adult BOOTH product photos, and age-restricted pixiv works are previewed only in channels marked age-restricted, unless the operator has configured an installation whose servers are all for adults.
 
-Steam links and short links are left as posted, except TikTok share links, whose short code is passed to tnktok.com without Kuyo following the redirect.
+Steam store links and short links are left as posted, except TikTok share links, whose short code is passed to tnktok.com without Kuyo following the redirect.
