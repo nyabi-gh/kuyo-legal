@@ -1,6 +1,6 @@
 # Kuyo Terms of Service
 
-Effective: October 11, 2026
+Effective: October 16, 2026
 
 By adding or using Kuyo, you agree to these terms.
 
@@ -14,7 +14,7 @@ You are responsible for the text you submit and for having the right to share it
 
 Server administrators are responsible for telling members when and where Kuyo is active, restricting the character-reply feature to adults and suitable channels, and choosing suitable channel permissions.
 
-Zundamon voices must not be used for political or religious activity, impersonation, deception, misleading content, or any other purpose prohibited by the applicable character and voice terms. Optional XTTS voice cloning may be used only with the voice owner's permission, within the model's non-commercial license, and never to impersonate or deceive.
+Zundamon voices must not be used for political or religious activity, impersonation, deception, misleading content, or any other purpose prohibited by the applicable character and voice terms.
 
 ## Availability
 
@@ -22,7 +22,7 @@ Kuyo is provided as available, without a promise that it will always be online, 
 
 ## Third-party services
 
-Kuyo depends on Discord, optional OpenAI or Anthropic features, Microsoft services, and locally hosted Supertonic, VOICEVOX, and optional XTTS software. Their own terms and policies also apply when their services, code, or models are used. Zundamon audio is provided with the credit `VOICEVOX:ずんだもん` and remains subject to the official VOICEVOX and Zundamon terms.
+Kuyo depends on Discord, optional OpenAI or Anthropic features, Microsoft services, and locally hosted Supertonic and VOICEVOX software. Their own terms and policies also apply when their services, code, or models are used. Zundamon audio is provided with the credit `VOICEVOX:ずんだもん` and remains subject to the official VOICEVOX and Zundamon terms.
 
 ## Suspension and termination
 
