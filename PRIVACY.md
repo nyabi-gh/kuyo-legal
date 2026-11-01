@@ -1,6 +1,6 @@
 # Kuyo Privacy Policy
 
-Effective: October 18, 2026
+Effective: November 1, 2026
 
 Kuyo is a Discord bot that reads selected text messages aloud and provides optional social-link previews, enabled by default per server. It also contains an optional character-reply feature for messages that call Kuyo, which the service operator may enable or disable, an optional message translation that the service operator may enable and each server can turn off, mini-games any member can open with the `/game` command, and formatted posts that server managers write on the settings website. Kuyo is configured on that website. This policy explains what information Kuyo uses and how it is handled.
 
@@ -24,6 +24,7 @@ Kuyo uses only the information needed to provide its features:
 - Per-server counts of each member's mini-game results: rock-paper-scissors wins, losses, and draws against Kuyo and against other members, word-chain words played, and word chains won against Kuyo
 - If you turn on Kuyo memory, short facts about you that Kuyo picked from your conversations with her
 - When you sign in to the settings website, your Discord user ID and the IDs of the servers you belong to
+- Daily usage counts per server, as described below
 
 Kuyo does not collect passwords, payment information, contacts, or direct messages. Outside the selected TTS channels, Kuyo checks supported URLs when link previews are enabled and processes messages that call Kuyo, together with the recent messages of the same channel or thread, when character replies are enabled. It translates a message only when a member picks it from the message's Apps menu. It ignores messages from other bots and webhooks for link previews.
 
@@ -73,6 +74,8 @@ A website sign-in is kept as a random session cookie. The database stores only a
 
 The service operator keeps copies of the database as backups, readable only by the server administrator, for up to 30 days; website sign-ins are left out of them. Settings you delete remain in backups made before the deletion until those backups expire. So that restoring a backup cannot bring deleted data back, each deletion you or a server manager make (deleting all personal data, turning memory off, deleting a memory, clearing a greeting, farewell, voice, or translation language, cancelling a reminder, or deleting a post), and each deletion that follows a channel being deleted or Kuyo being removed from a server, is also recorded in a separate file for 35 days with what was deleted (your user ID, the memory or reminder number or language, or the post's message, channel, or server ID) and the time, never the deleted content. After 35 days only the entry's sequence number is kept. Deletions made after a restored backup are applied again when the service starts.
 
+Kuyo keeps daily usage counts per server so the service operator can see where it is used and what it costs: how often Kuyo was called, the number of model calls and their input, output, and cached tokens, the number of characters sent to each speech engine and reused from the speech cache, the number of link previews per preview service, lookups made to external services, and how often each command was used. Each count is stored with only the day, the server ID, and what was counted; no user ID, message text, or other content is recorded. The counts are shown only to the service operator, are deleted after 180 days, and a server's counts are deleted when Kuyo is removed from it.
+
 Limited service logs may contain server IDs, Discord user IDs, timing information, and error messages. Kuyo itself does not write message text to these logs. The exception is the local VOICEVOX engine: it receives the text to read in its request address and records that address in its access log, which cannot be turned off, so the text of messages read with a VOICEVOX voice can appear there. That log stays inside the operator's deployment and is rotated after at most 30 MB. Logs are automatically rotated and used only to keep the service reliable.
 
 ## Service providers
@@ -95,7 +98,7 @@ Use `My settings` on the settings website, which `/kuyo` links to, to see or del
 
 You can also choose the language translations are shown in, or go back to following your Discord language, under `My settings`. Server administrators can turn translation off for their server on the server's page.
 
-Server administrators can view or remove custom pronunciation entries from the server's page on the settings website. Removing Kuyo from a server deletes that server's settings, pronunciation entries, mini-game counts, and reminders.
+Server administrators can view or remove custom pronunciation entries from the server's page on the settings website. Removing Kuyo from a server deletes that server's settings, pronunciation entries, mini-game counts, reminders, and usage counts.
 
 Server administrators can disable link previews on the server's page on the settings website. The original author or a member with Manage Messages can delete the entire replacement, including text, links, and embeds, using the Delete message button. An older Hide preview button first updates to the new label and explains the change; pressing the new button deletes the message. Tracking and dismissal state remain until the applicable message/channel/server cleanup described above. Prefix a link with `!`, surround it with angle brackets, or use code/spoiler formatting to prevent automatic conversion.
 
