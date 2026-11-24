@@ -1,6 +1,6 @@
 # Kuyo Privacy Policy
 
-Effective: November 23, 2026
+Effective: November 24, 2026
 
 Kuyo is a Discord bot that reads selected text messages aloud and provides optional social-link previews, enabled by default per server. It also contains an optional character-reply feature for messages that call Kuyo, which the service operator may enable or disable, an optional message translation that the service operator may enable and each server can turn off, mini-games any member can open with the `/game` command, and formatted posts that server managers write on the settings website. Kuyo is configured on that website. This policy explains what information Kuyo uses and how it is handled.
 
@@ -45,7 +45,7 @@ The mini-games opened with `/game` use the Discord user IDs of the people playin
 
 When a reminder set with `/remind` comes due, Kuyo posts its text in the channel where it was set, mentioning the member who set it. If that member is then in the voice channel Kuyo is reading in, the text is also read aloud with their server display name, in Kuyo's own voice, which is a Microsoft Edge voice unless the operator configured another. A timer set with `/timer` rings the same way, saying only that the time is up. A reminder or timer is visible to others only when it rings; the list of a member's reminders and timers is shown only to them.
 
-When a server turns on time-in-call notices, Kuyo says aloud in her voice channel, at the interval the server chose, how long each person there has been in it, with their server display name when someone else is in the room too.
+When a server turns on time-in-call notices, Kuyo says aloud in her voice channel, at the interval the server chose, how long the call there has lasted since the first person joined. The notice names nobody.
 
 For posts, Kuyo sends the author's server display name, Discord avatar URL, role color, the text they wrote, and the images they attached to Discord through an application-owned webhook, so the post appears under the author's name. Only members with Manage Server can write, edit, or delete posts. Images are checked to be PNG, JPEG, GIF, or WebP and passed to Discord; when a post is edited, the images it keeps are downloaded from Discord and uploaded again with it. Kuyo does not store images itself.
 
